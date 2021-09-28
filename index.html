@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokedex</title>
+    <link rel="stylesheet" href="css/pokedex.css">
+    <link rel="stylesheet" href="css/coolors.css">
+    <link rel="stylesheet" href="css/spinner.css">
+    <link rel="stylesheet" href="css/pokedexAdvanced.css">
+</head>
+<body onload="charge()">
+    <h1 class="titleFi">pokedex</h1>
+    <!-- <div class="cont">
+        <div class="loading">
+            <div class="partUp">
+                
+            </div>
+            <div class="pointCenter"></div>
+            <div class="partDown"></div>
+            <h3>loading...</h3>
+        </div>
+    </div>
+     -->
+<section id="sectionPoke">
+    <div class="pokedex_simple">
+        <ul id="list">
+            
+        </ul>
+    </div>
+    <div class="right">
+        <div class="search">
+            <input type="text" id="filterforName" placeholder="Nombre del pokemon">
+            <input type="number" name="pokemonID" id="filterforId" placeholder="Numero del pokemon">
+            <button class="btnSearch" onclick="searchPokemon()">buscar</button>
+        </div>
+    
+        <div class="pokedex">
+            <div class="pokedexLeft">
+                <div class="decorateTop">
+                    <div class="ct">
+
+                    </div>
+                    <div class="threeCircles">
+                        <div class="circleTop cRed"></div>
+                        <div class="circleTop cYellow"></div>
+                        <div class="circleTop cGreen"></div>
+                    </div>
+                    <div class="cornerLeft">
+
+                    </div>
+                    <div class="curveLeft"></div>
+                    <div class="curveLeftHover"></div>
+                </div>
+                <div class="borderScreen">
+                    <div class="twoCircles">
+                        <div class="circleTop cRed"></div>
+                        <div class="circleTop cRed"></div>
+                    </div>
+                    <div class="pokedexScreen" id="pokedexScreen">
+    
+                    </div>
+                    <div class="decBtnAndLines">
+                        <div class="circlebottom cRed"></div>
+                        <div class="fourLines">
+                            <div class="lines"></div>
+                            <div class="lines"></div>
+                            <div class="lines"></div>
+                            <div class="lines"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnDeco">
+                    <div class="line lineOne"></div>
+                    <div class="line lineTwo"></div>
+                </div>
+                <div class="circleDeco">
+
+                </div>
+                <div class="idScreen" id="idScreen">
+    
+                </div>
+                <div class="btnMoves">
+                    <div class="move btnUp"><ion-icon class="icon arrowUp" name="caret-up-outline"></ion-icon></div>
+                    <div class="move btnRight" onclick="next()"><ion-icon class="icon arrowRight" name="caret-forward-outline"></ion-icon></div>
+                    <div class="move btnDown"><ion-icon class="icon arrowDown" name="caret-down-outline"></ion-icon></div>
+                    <div class="move btnLeft" onclick="previous()"><ion-icon class="icon arrowLeft" name="caret-back-outline"></ion-icon></div>
+                    <div class="move btnCenter" onclick="currently()">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+        </div>
+
+            <div class="pokedexCenter">
+                
+            </div>
+
+            <div class="pokedexRight">
+                <div class="cornerRight">
+                    
+                </div>
+                <div class="curveRight"></div>
+                <div class="curveRightHover"></div>
+                <div class="screenInfo" id="screenInfo">
+    
+                </div>
+                <div class="btnsFake">
+                    <div class="btnFake cornerOne"></div>
+                    <div class="btnFake"></div>
+                    <div class="btnFake"></div>
+                    <div class="btnFake"></div>
+                    <div class="btnFake cornerTwo"></div>
+                    <div class="btnFake cornerThree"></div>
+                    <div class="btnFake"></div>
+                    <div class="btnFake"></div>
+                    <div class="btnFake"></div>
+                    <div class="btnFake cornerFour"></div>
+                </div>
+            </div>
+                
+        </div>
+    </div>
+    
+</section>
+    
+    
+    <script src="js/pokedex.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>

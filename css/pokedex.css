@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background: rgb(243, 243, 234);
+    display: flexbox;
+   
+}
+
+.titleFi{
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: azure;
+    letter-spacing: 5px;
+    background: linear-gradient(60deg, rgb(96, 201, 243), rgb(0, 140, 255));
+}
+.pokedex_simple{
+    width: 30%;
+    margin: auto;
+    float: left;
+    height: 650px;
+    overflow: auto;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    justify-content:space-between;
+    
+}
+.pokemonCard{
+    display: flex;
+    width:90%;
+    height: 65px;
+    margin: 5px 10px;
+    list-style: none;
+    box-shadow: 1px 1px 10px 1px rgb(197, 213, 218);
+    text-align: center;
+    border-radius: 15px;
+    line-height: 65px;
+    justify-content: space-around;
+
+    background: radial-gradient(rgb(248, 248, 232),rgb(202, 209, 207));
+}
+.pokemonCard:hover{
+    width:90.5%;
+    height: 66px;
+    transform: translate(3px);
+    cursor: pointer;
+    
+}
+.pokemonCard:hover img{
+    width: 75px;
+    height: 75px;
+    
+}
+.pokemonCard img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    /* background: white; */
+}
+.imgContainer{
+    width: 30%;
+}
+.info{
+    text-transform: uppercase;
+    width: 60%;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.right{
+    width: 60%;
+    float: right;
+    margin-right: 20px;
+}
+
+
+/* styles of filter camps*/
+
+.search{
+    width: 100% ;
+    height: 50px;
+    text-align: right;
+    margin: auto;
+    line-height: 50px;
+}
+input{
+    height: 30px;
+    width: 200px;
+    outline: none;
+    border: none;
+    border-radius: 5px 5px 0px 0px;
+    background: rgb(171, 207, 241);
+    border-bottom: 2px solid rgb(54, 54, 54);
+    text-align: center;
+}
+.btnSearch{
+    height: 30px;
+    width: 70px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(173, 211, 192);
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+.btnSearch:hover{
+    background: rgb(157, 194, 175);
+}
+.btnSearch:active{
+    background: rgb(163, 207, 198);
+    transform: translate(2px);
+    box-shadow: 1px 1px 5px 1px rgb(174, 179, 179);
+}

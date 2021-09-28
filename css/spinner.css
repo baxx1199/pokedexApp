@@ -1,0 +1,40 @@
+.cont{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+.loading{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:3px solid;
+    border-color:rgb(3, 3, 3);
+    animation:s2 1s infinite linear;
+    overflow: hidden;
+  }
+  @keyframes s2 {50%{transform: rotate(-0.1turn)}
+}
+  
+  .partUp{
+      background: linear-gradient(160deg, red, rgb(184, 18, 13));
+      height: 25px;
+      width: 100%;
+      border-bottom: 1.5px solid black;
+  }
+  .partDown{
+
+    height: 25px;
+    width: 100%;
+    border-top: 1.5px solid black;
+}
+.pointCenter{
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    position: absolute;
+    left: 37%;
+bottom: 35%;
+    background: rgb(102, 102, 102);
+    border: 2px solid black;
+}
