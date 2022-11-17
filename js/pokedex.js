@@ -61,7 +61,7 @@ const createPokemonInner =(pokemon)=>{
 
     let pokemonInfoHTML = `<li class="pokemonCard ${type}" onclick="seeInfo(${pokemon.id})" >
     
-            <h2 class="info">#${pokemon.id.toString().padStart(3, '0')} ${pokemon.name}</h2>
+            <h2 class="info">#${pokemon.id.toString().padStart(3, '0')} <span> ${pokemon.name} </span></h2>
             <div class="imgContainer">
                 <img src="${pokemon.sprite}" alt="${pokemon.name}'s sprite">
             </div>

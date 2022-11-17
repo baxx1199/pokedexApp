@@ -1,9 +1,10 @@
 
 .pokedex{
     height: 600px;
-    width: 90%;
+    width: 100%;
+    min-width: 580px;
     margin: 20px auto;
-
+    
     display: flex;
 }
 
@@ -138,7 +139,7 @@
 .borderScreen{
     position: absolute;
     width: 85%;
-    height: 36vh;
+    height: 45%;
     background: rgb(189, 189, 186);
     top: 22%;
     left: 8%;
@@ -148,7 +149,7 @@
 .pokedexScreen{
     position: absolute;
     width: 80%;
-    height: 25vh;
+    height: 70%;
     background: rgb(223, 215, 190);
     top: 12%;
     left: 9.5%;
@@ -264,13 +265,16 @@
     top: 32% ;
     left: 32%;
     box-shadow: none;
+    
+    align-items: center;
+
 }
 .btnCenter .circle{
-    height: 25px;
-    width: 25px; 
+    height: 75%;
+    width: 75%; 
     border-radius: 100%;
     border: 1px solid rgb(139, 201, 226);
-    margin: 5px auto;
+    margin: auto
     
 }
 .icon{
@@ -291,7 +295,7 @@
 .arrowRight{
     right: 0;
 }
-/* config right part */
+/* config right part :::: Stats ::::: -------------- */
 .cornerRight{
     position: absolute;
     width: 50%;
@@ -317,12 +321,16 @@
 .screenInfo{
     position: absolute;
     width: 85%;
-    min-height: 25vh;
+    min-height: 50%;
     background: rgb(130, 244, 248);
     border: 2px solid rgb(39, 39, 39);
     border-radius: 20px;
     top: 9%;
     left: 8%;
+    overflow: hidden scroll;
+}
+.screenInfo::-webkit-scrollbar{
+    visibility: hidden;
 }
 .divInfo{
     width: 90%;
@@ -372,7 +380,7 @@
 .btnsFake{
     position: absolute;
     width: 85%;
-    height: 10vh;
+    height: 10%;
     
     border-radius: 20px;
     bottom: 25%;
@@ -382,8 +390,8 @@
 
 }
 .btnFake{
-    height: 5vh;
-    width: 19.3%;
+    height: 48%;
+    width: 19%;
     border: 1px solid black;
     background: rgb(58, 114, 187);
 }
@@ -399,3 +407,306 @@
 .cornerFour{
     border-radius:  0px  0px 5px 0px;
 }
+
+/* -----------------------------Responsive desing--------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+    
+    .pokedex{
+        width: 90%;
+        height: 400px;
+        margin: auto
+    }
+    
+    .pokedexLeft,.pokedexRight{ 
+        height: 400Px;
+        position: relative; 
+    }
+    .pokedexRight{
+        height: 300px;
+        bottom: -100px;
+    }
+    .pokedexCenter{
+        width: 4%;
+        height: 400px;  
+    }
+    /* config left part */
+    .decorateTop{
+        height: 70px;
+
+    }
+    .ct{
+        height: 35px;
+        width: 35px;
+        
+    }
+    .threeCircles{
+        height: 20px;
+        width: 70%;
+        top: 4px ;
+        right: -5px;
+        position: absolute;
+        text-align: right;
+        
+    }
+    .circleTop{
+        height: 7px;
+        width: 7px;
+       
+    }
+  
+   /*  .twoCircles{
+        
+    } */
+    .decBtnAndLines{
+        
+        width: 80%;
+        height: 20px;
+        
+        padding-bottom: 7px;
+        
+    }
+    .circlebottom{
+        height: 9px;
+        width: 9px;
+        
+        margin: 9px 10px; 
+    } 
+    .fourLines{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 15px;
+        width: 38px;
+        margin-right: 20px; 
+        margin-top: auto;
+        justify-content: space-between;
+    }
+    .lines{
+        height: 1.5px;
+        width: 80%;
+        border-radius: 10px;
+        background: rgb(56, 55, 55);
+        margin:auto;
+    }
+    .cornerLeft{ 
+        height: 40px;
+    }
+  
+   
+    .borderScreen{
+        position: absolute;
+        width: 85%;
+        height: 200px;
+        background: rgb(189, 189, 186);
+        top: 22%;
+        left: 8%;
+        border-radius: 20px 20px 20px 0;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 16% 100%, 0 84%);
+    }
+    .pokedexScreen{
+        position: absolute;
+        width: 80%;
+        height: 145px;
+        background: rgb(223, 215, 190);
+        top: 12%;
+        left: 9.5%;
+        border: 2px solid black;
+        border-radius: 20px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .spritePokeDex{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        vertical-align: middle;
+
+    }
+    .idScreen{   
+        width: 25%;
+        height: 10%;
+        font-size: 15px;
+        bottom: 7%;
+        left: 30%;
+        text-align: center;
+        padding-top:5px ;
+    }
+    .idPokemonLeft{
+        height: 90%; 
+        font-size: 15px;
+    }
+    
+    /* decorate */
+    .btnDeco{
+        height: 10px;   
+    }
+    /* .line{
+        height: 6px;
+        width: 50px;
+        background: red; 
+        margin: 7px 10px 0px 10px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 3px 1px rgb(139, 25, 25);
+    } */
+   /*  .lineTwo{
+        background: rgb(13, 96, 163);
+    } */
+    
+    .btnMoves{
+        height: 50px;
+        width: 50px;  
+        right: 5px;
+    }
+    .circleDeco{
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: rgb(39, 45, 59);
+        border: 3px solid black;
+        position: absolute;
+        bottom: 10%;
+        left: 7%;
+    }
+    .move{
+        position: absolute;
+        height: 15px;
+        width: 15px; 
+       
+        
+    }
+    
+    .btnCenter{
+        border-radius: 5px;
+        height: 19px;
+        width: 19px; 
+        
+        
+    }
+   
+    .icon{
+        font-size: 15px;
+        color: aquamarine;
+    }
+    
+    /*------------- config right part Stats----------------------*/
+    .cornerRight{
+        position: absolute;
+        width: 50%;
+        height: 50px;
+        top: -50px;
+        left: 0px;
+        background:rgb(180, 54, 54);
+        border-radius: 0 30px 0 0;
+    }
+    .curveRight,.curveRightHover{
+        position: absolute;
+        width: 21px ;
+        height: 21px;
+        background: rgb(180, 54, 54);
+        top: -21px;
+        left: 49%;
+        
+    }
+    .curveRightHover{
+        background: rgb(243, 243, 234);
+        border-radius: 0 0 0 30px;
+        top: -22px;
+        left: 50%;
+        width: 20px ;
+        height: 21.5px;
+    }
+    .screenInfo{
+        position: absolute;
+        width: 85%;
+        height: 50%;
+        background: rgb(130, 244, 248);
+        border: 2px solid rgb(39, 39, 39);
+        border-radius: 20px;
+        top: 3%;
+        left: 6%;
+        overflow: hidden scroll;
+    }
+    .divInfo{
+        width: 90%;
+        margin: auto;
+        margin-left: 20px;
+        margin: 10px;
+    }
+    .name_id{
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+    
+    }
+    .infoType{
+        text-transform: capitalize;
+        font-size: 10px;
+    }
+    .stt{
+        text-transform: uppercase;
+        font-size: 12px
+    }
+    .stats{
+        list-style: none;
+        margin-left: 10px;
+        height: 40%;
+        overflow: hidden scroll;
+        padding: 0;
+
+    }
+    .stats li{
+        font-size: 8px;
+        height: 10px;
+        width: 100%;
+        padding:  0 0 0 2px;
+        text-align: left;
+        margin: 3px auto;
+        line-height: normal;
+        background: rgb(139, 195, 228);
+        text-transform: capitalize;
+    }
+    .spanType{
+        margin: auto 1px;
+        
+        border-radius: 5px;
+        
+    }
+    
+    .form{
+        font-size: 12px ;
+        font-weight: bolder;
+    }
+    
+    .btnsFake{
+        position: absolute;
+        width: 85%;
+        height: 15%;
+        
+        border-radius: 20px;
+        bottom: 10%;
+        left: 8%;
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    .btnFake{
+        height: 50%;
+        width: 18%;
+        border: 1px solid black;
+        background: rgb(58, 114, 187);
+    }
+    .cornerOne{
+        border-radius: 5px 0px 0px 0px;
+    }
+    .cornerTwo{
+        border-radius:  0px 5px 0px 0px;
+    }
+    .cornerThree{
+        border-radius:  0px 0px 0px 5px;
+    }
+    .cornerFour{
+        border-radius:  0px  0px 5px 0px;
+    }
+}
+
